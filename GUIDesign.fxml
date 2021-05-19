@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<GridPane xmlns:fx="http://javafx.com/fxml/1" alignment="center" hgap="10" stylesheets="@Assignment4.css"
+          vgap="10" xmlns="http://javafx.com/javafx/11.0.1"
+          fx:controller="Assignment4.GUISimulator">
+   <children>
+      <Pane prefHeight="600.0" prefWidth="400.0">
+         <children>
+            <Button fx:id="btnArrive" layoutX="14.0" layoutY="98.0" mnemonicParsing="false" onAction="#buttonArrive" prefHeight="33.0" prefWidth="161.0" text="Customer Arrives" />
+            <Button fx:id="btnLeave" layoutX="14.0" layoutY="180.0" mnemonicParsing="false" onAction="#buttonLeave" prefHeight="33.0" prefWidth="161.0" text="Customer Leaves" />
+            <Button fx:id="btnClockUp" layoutX="212.0" layoutY="14.0" mnemonicParsing="false" onAction="#buttonClockUp" prefHeight="33.0" prefWidth="161.0" text="Clock +1" />
+            <Button fx:id="btnStats" layoutX="13.0" layoutY="300.0" mnemonicParsing="false" onAction="#buttonStatistics" prefHeight="33.0" prefWidth="374.0" text="Statistics" />
+            <Label layoutX="220.0" layoutY="57.0" prefHeight="25.0" prefWidth="86.0" text="Clock" />
+            <TextField fx:id="txtClock" layoutX="218.0" layoutY="82.0" />
+            <Label layoutX="218.0" layoutY="131.0" prefHeight="25.0" prefWidth="149.0" text="Customer being Served" />
+            <TextField fx:id="txtCustServed" layoutX="218.0" layoutY="156.0" />
+            <Label layoutX="218.0" layoutY="196.0" prefHeight="25.0" prefWidth="167.0" text="Number of Customers Waiting" />
+            <TextField fx:id="txtNumCustWaiting" layoutX="218.0" layoutY="221.0" />
+            <TextArea fx:id="txtStats" layoutX="13.0" layoutY="363.0" prefHeight="223.0" prefWidth="374.0" />
+            <Label layoutX="13.0" layoutY="14.0" prefHeight="33.0" prefWidth="199.0" text="Platteville Burger Simulator">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </children>
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+   </rowConstraints>
+</GridPane>
